@@ -1,0 +1,12 @@
+{
+	"name": "NugPlane Cheat",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "",
+	"content_scripts": [
+		{
+			"matches": ["http://flappycreator.com/flappy.php?id=5629ee55ee0e5"],
+			"js": ["jquery.min.js","cheat.js"]
+		}
+	]
+}
