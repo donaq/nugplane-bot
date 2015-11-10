@@ -49,7 +49,7 @@ function bot(){
 
         if(closest==null) return self.clickGround(bbottom);
         // decide if we should click
-        self.prevy = (bird.body.velocity.y/250 + bbottom);
+        self.prevy = (bird.body.velocity.y/125 + bbottom);
         if((closest.y - bbottom) <= 15 || (bird.body.velocity.y/250 + bbottom) >= closest.y-17) self.click();
     };
 
@@ -66,7 +66,7 @@ function bot(){
 
     $(document).ready(function(){
         setInterval(self.checkGameEnd,30); 
-        setInterval(self.play,4); 
+        setInterval(self.play,8); 
     });
 }
 // Inject bot into the page
