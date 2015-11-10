@@ -49,8 +49,6 @@ function bot(){
 
         if(closest==null) return self.clickGround(bbottom);
         // decide if we should click
-        if(self.prevy!=undefined)
-            console.log('predicted ' + self.prevy + ' actual ' + bbottom);
         self.prevy = (bird.body.velocity.y/250 + bbottom);
         if((closest.y - bbottom) <= 15 || (bird.body.velocity.y/250 + bbottom) >= closest.y-17) self.click();
     };
